@@ -8,6 +8,7 @@
 #  username   :string
 #
 
+
 class User < ApplicationRecord
   validates :username, presence: true
 

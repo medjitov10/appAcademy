@@ -1,0 +1,8 @@
+
+<ul>
+  <% @users.each_with_index do |el,index| %>
+    <li><%= index+1 %>.
+      <%= link_to el.username.capitalize, user_path(el) %>
+    </li>
+  <% end %>
+<ul>
