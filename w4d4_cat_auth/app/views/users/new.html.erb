@@ -1,0 +1,13 @@
+<%= render 'shared/errors' %>
+
+<form action=" <%= users_url %> " method='post'>
+  <input type="hidden" name="_method">
+
+  <label for="user_name">User name:</label>
+  <input name="user[name]" id="user_name" value="<%= @user.user_name %>">
+
+  <label for="password">Password:</label>
+  <input name="user[password]" id="password" value="<%= @user.password %>">
+
+  <input type="submit" value="CreateUser">
+</form>
