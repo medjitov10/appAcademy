@@ -1,0 +1,12 @@
+<%= form_for @album do |f| %>
+  Album name : <%= f.text_field :title %>
+  <br>
+  Album year : <%= f.number_field :year, :value => @album.year || "" %>
+  <br>
+  It was live ?
+  <% status = [["Live", true],["Studio", false]] %>
+  <!-- <%= f.select :live?, [["Live", "true"],["Studio", "false"]] %> -->
+  <%= f.select(:live?, options_for_select(status, :selected => params[:status])) %>
+  <br>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,15 @@
+<% unless current_user.nil? %>
+  <% current_user.bands.each do |band|%>
+
+    <div class="band_main">
+      <%= link_to band.name, band_path(band.id) %>
+      <%= button_to 'D', band_path(band.id), method: :delete, :class => 'delete_button_main'%>
+
+      <%= button_to 'E', edit_band_path(band.id), method: :get, :class => 'edit_button_main'%>
+    </div>
+
+
+  <% end %>
+  <br>
+  <%= link_to 'Add new band', new_band_path%>
+<% end %>

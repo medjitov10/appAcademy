@@ -1,0 +1,7 @@
+<%= @band.name %>
+<br>
+<% @band.albums.each do |album| %>
+  <%=link_to album.title, album_path(album.id) %>
+  <br>
+  <%= link_to 'Create album', new_album_path%>
+<% end %>
