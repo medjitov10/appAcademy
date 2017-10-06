@@ -1,0 +1,7 @@
+<h1>All the Subs!</h1>
+<div class="">
+  <%= link_to "Make new post", new_sub_path%>
+  <% @subs.each do |sub| %>
+    <%= link_to sub.title, sub_path(sub) %>
+  <% end %>
+</div>
