@@ -1,0 +1,55 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+.mainDiv{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.mainClock{
+  padding: 10px;
+  border: 3px solid black;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F6B765;
+  font-size: 36px;
+}
+
+.mainWeather{
+  margin-top: 30px; 
+}
+
+.subWeather{
+
+  padding: 10px;
+  border: 3px solid black;
+  font-family: 'Merriweather', serif;
+  background-color: #87FAB1;
+  font-size: 32px;
+}
+
+.weather{
+  justify-content: center;
+  display: flex;
+}
+.clock{
+
+  display: flex;
+  justify-content: space-between;
+}

@@ -15,7 +15,6 @@ const Sent = {
   },
   renderMessage: function (message) {
     let li = document.createElement('li');
-
     li.className = 'messages';
     li.className = "style_Content";
     li.innerHTML = `
